@@ -3,33 +3,33 @@ production:
         servers:
             server: 
                 unique_name: frontend1
-        		type: BYOC
-       			vendor: aws
-        		region: sa-east-1a
-        		size: t1.micro        		
+        	type: BYOC
+       		vendor: aws
+        	region: sa-east-1a
+        	size: t1.micro        		
             server: 
                 unique_name: frontend2
-        		type: BYOC
-       			vendor: aws
-        		region: sa-east-1b
-        		size: t1.micro     
+        	type: BYOC
+       		vendor: aws
+        	region: sa-east-1b
+        	size: t1.micro     
             server: 
                 unique_name: process1
-        		type: BYOC
-       			vendor: aws
-        		region: sa-east-1
-        		size: t1.micro
-			configuration:
+        	type: BYOC
+       		vendor: aws
+        	region: sa-east-1
+        	size: t1.micro
+	    configuration:
                 asset_pipeline_precompile: false
             server: 
                 unique_name: process2
-        		type: BYOC
-       			vendor: aws
-        		region: sa-east-1
-        		size: t1.micro    
-			configuration:
+        	type: BYOC
+       		vendor: aws
+        	region: sa-east-1
+        	size: t1.micro    
+             configuration:
                 asset_pipeline_precompile: false    
-	mongodb:
+    mongodb:
         server: 
         	unique_name: mongodb     
         	type: BYOC
@@ -38,18 +38,18 @@ production:
         	size: t1.micro               		       		        		   		
     postgresql:
         server:
-        	unique_name: postgresql    
-        	type: BYOC
-       		vendor: aws
-        	region: sa-east-1
-        	size: t1.micro     
+            unique_name: postgresql    
+            type: BYOC
+       	    vendor: aws
+            region: sa-east-1
+            size: t1.micro     
         configuration:
             version: 9.2.3
             postgis: true
-	redis:
+    redis:
         server:	
-        	unique_name: redis
-        	type: BYOC
-       		vendor: aws
-        	region: sa-east-1
-        	size: t1.micro     
+            unique_name: redis
+            type: BYOC
+       	    vendor: aws
+            region: sa-east-1
+            size: t1.micro     
