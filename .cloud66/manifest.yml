@@ -3,10 +3,10 @@ production:
         servers:
             server: 
                 unique_name: frontend1
-        	type: BYOC
-       		vendor: aws
-        	region: sa-east-1a
-        	size: t1.micro        		
+                type: BYOC
+                vendor: aws
+                region: sa-east-1a
+                size: t1.micro        		
             server: 
                 unique_name: frontend2
         	type: BYOC
@@ -35,7 +35,7 @@ production:
         	type: BYOC
        		vendor: aws
         	region: sa-east-1a
-        	size: t1.micro               		       		        		   		
+                size: t1.micro
     postgresql:
         server:
             unique_name: postgresql    
