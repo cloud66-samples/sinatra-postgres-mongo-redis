@@ -40,7 +40,7 @@ production:
         server:
             unique_name: postgresql    
             type: BYOC
-       	    vendor: aws
+            vendor: aws
             region: sa-east-1
             size: t1.micro     
         configuration:
@@ -50,6 +50,6 @@ production:
         server:
             unique_name: redis
             type: BYOC
-       	    vendor: aws
+            vendor: aws
             region: sa-east-1
             size: t1.micro     
