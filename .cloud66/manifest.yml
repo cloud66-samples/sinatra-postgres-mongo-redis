@@ -24,7 +24,7 @@ production:
             server: 
                 unique_name: process2
                 type: BYOC
-       	        vendor: aws
+                vendor: aws
                 region: sa-east-1
                 size: t1.micro    
              configuration:
@@ -33,7 +33,7 @@ production:
         server: 
                 unique_name: mongodb     
                 type: BYOC
-       	        vendor: aws
+                vendor: aws
                 region: sa-east-1a
                 size: t1.micro
     postgresql:
