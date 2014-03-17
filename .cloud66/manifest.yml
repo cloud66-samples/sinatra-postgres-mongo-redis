@@ -1,5 +1,5 @@
 production:
-    rails:
+    sinatra:
         servers:
             server: 
                 unique_name: frontend1
