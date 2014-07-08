@@ -11,7 +11,7 @@ gem 'rack-throttle'
 gem 'dalli'
 gem 'redis'
 gem 'resque'
-gem 'thin'
+gem 'unicorn'
 gem 'mongoid'
 gem 'bson'
 gem 'bson_ext', "~> 1.3"
