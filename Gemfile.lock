@@ -23,7 +23,7 @@ GEM
     daemons (1.1.9)
     dalli (2.7.2)
     durran-validatable (2.0.1)
-    eventmachine (1.0.3)
+    eventmachine (1.0.8)
     excon (0.33.0)
     heroku (3.9.6)
       excon (= 0.33.0)
