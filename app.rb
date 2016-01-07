@@ -16,7 +16,7 @@ use Rack::Parser, :content_types => {
 class App < Sinatra::Application
   configure do
     ENV['RACK_ENV'] = ENV['RACK_ENV'] || environment.to_s
-    YAML::load(File.open('config/database.yml'))[ENV['RACK_ENV']].symbolize_keys.each do |key, value|
+    YAML.load(File.open('config/database.yml'))[ENV['RACK_ENV']].symbolize_keys.each do |key, value|
       set key, value
     end
 
