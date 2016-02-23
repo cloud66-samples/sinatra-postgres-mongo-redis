@@ -19,7 +19,7 @@ defaults: &defaults
     MODULE_URL: https://github.com/openresty/headers-more-nginx-module/archive/v0.25.tar.gz
     ASSETS_DIGEST: true
     ASSETS_PREFIX: /assets-build
-  rails: &rails
+  sinatra: &rails
     configuration: &rails_config
       asset_pipeline_precompile: true
       do_initial_db_schema_load: true
@@ -36,7 +36,7 @@ defaults: &defaults
 
 qa:
   <<: *defaults
-  rails:
+  sinatra:
     <<: *rails
     configuration:
       <<: *rails_config
